@@ -8,14 +8,14 @@
     $data = $_POST['data'];
     $endereco = $_POST['endereco'];
 
-    echo 'Numero de prontuario'.$numero.'</br';
-    echo 'Telefone:'.$telefone.'</br';
-    echo 'Ano:'.$ano.'</br';
-    echo 'Resposavel Familiar'.$respFamiliar.'</br';
-    echo 'Municipio'.$municipio.'</br';
-    echo 'Unidade'.$unidade.'</br';
-    echo 'Data'.$data.'</br';
-    echo 'Endereco'.$endereco.'</br';
+    echo 'Numero de prontuario'.$numero.'</br>';
+    echo 'Telefone:'.$telefone.'</br>';
+    echo 'Ano:'.$ano.'</br>';
+    echo 'Resposavel Familiar'.$respFamiliar.'</br>';
+    echo 'Municipio'.$municipio.'</br>';
+    echo 'Unidade'.$unidade.'</br>';
+    echo 'Data'.$data.'</br>';
+    echo 'Endereco'.$endereco.'</br>';
 
     $host = "localhost";
     $database = "projeto_integrador";
@@ -29,8 +29,8 @@
         die("Conexão Falhou");
     }
     #Criar a consulta sql de insercao de dados
-    $sql = "INSERT INTO projeto_integrador VALUES ('$numero', $telefone, $ano, '$respFamiliar', $municipio, $unidade, $data, $endereco, )";
-    if(mysqli_query($conexao,$sql)){
+    $sql = "INSERT INTO prontuario_familiar VALUES ('$numero', '$telefone', '$ano', '$respFamiliar', '$municipio', '$unidade', '$endereco', '$data')";
+    if(mysqli_query($conexao,  $sql)){
         echo "Inserido !";
     }
     #Encerrar a conexao com o BD

@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cadastro.php" type="text">
     <title>Teste para banco de dados</title>
 </head>
 <body>
-    <forms action="cadastro.php" name='formulario_cad' method="GET">
-        <legend>Prontuário Familiar</legend>
-        <p>Número do Prontuário:
+    <form action="cadastro.php" name='formulario_cad' method="POST">
+        <label for="numero">Número do Prontuário:
             <input type="number" name="numero">
-        </p>
-        <p>Telefone: 
+        </label></br>
+
+        <label for="telefone">Telefone:
             <input type="number" name="telefone">
-        </p>
-        <p>Ano:
+        </label> </br>
+            
+        <label for="ano">Ano
             <input type="number" name="ano">
-        </p>
-        <p>Responsável familiar:
+        </label></br>
+        
+        <label for="respFamiliar">Responsável familiar:
             <input type="text" name="respFamiliar">
-        </p>
-        <p>Município:
+        </label></br>
+            
+        <label for="municipio">Município:
             <input type="text" name="municipio">
-        </p>
-        <p>Unidade:
+        </label></br>
+        
+        <label for="unidade">Unidade:
             <input type="text" name="unidade">
-        </p>
-        <p>Data:
+        </label></br>
+        
+        <label for="data">Data:
             <input type="date" name="data">
-        </p>
-        <p>Endereço:
+        </label></br>
+        
+        <label for="endereco">Endereço:
             <input type="text" name="endereco">
-        </p>
-        <input type="submit" value="Cadastro">
-    </forms>
+        </label></br>
+        
+        <input type="submit" value="Cadastro" >
+
+    </form>
 </body>
 </html>
